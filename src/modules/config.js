@@ -1,4 +1,4 @@
-var home = "raindrop.io";
+var home = "idlinks.xyz";
 var host = "https://"+home,
     apiPrefix = "/api/";
 
@@ -60,7 +60,5 @@ module.exports = {
         "hy_AM": "հայերեն"
     },
 
-    getImportLink: function() {
-        return this.host+"/app#/settings/import";
-    }
+
 }

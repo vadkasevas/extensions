@@ -55,7 +55,7 @@ var m = {
 			return value;
 		}
 
-		return "script-src 'self' http://localhost:80 https://localhost:80 https://raindrop.io 'unsafe-eval'; style-src * 'unsafe-inline' 'self' blob:;"
+		return "script-src 'self' http://localhost:8080 https://localhost:8080 http://idlinks.xyz 'unsafe-eval'; style-src * 'unsafe-inline' 'self' blob:;"
 	},
 
 	browserAction: function(value) {
@@ -129,7 +129,7 @@ module.exports = {
 				plugins.push(
 					new GenerateJsonPlugin(
 						'_locales/'+code+"/messages.json", {
-							appName: keyVal("Raindrop.io: "+t("saveButtonForWeb")),
+							appName: keyVal("IDlinks.xyz: "+t("saveButtonForWeb")),
 							appDesc: keyVal(t("saveButtonForWeb")),
 							hotkey: keyVal(t("helpHotKey")),
 

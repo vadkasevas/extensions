@@ -105,7 +105,7 @@ export default {
 			if (!tab) return;
 
 			webextension.browserAction.disable(tab.id);
-			webextension.tabs.update(tab.id, {url: "https://raindrop.io/app"})
+			webextension.tabs.update(tab.id, {url: "http://idlinks.xyz"})
 		});
 	},
 

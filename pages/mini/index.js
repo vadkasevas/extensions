@@ -9,7 +9,7 @@ var sendMessageToIframe = function(m) {
 }
 
 var onMessage = function(e) {
-	if (e.origin!="https://raindrop.io")
+	if (e.origin!="http://idlinks.xyz")
 		return;
 
 	switch(e.data.action) {

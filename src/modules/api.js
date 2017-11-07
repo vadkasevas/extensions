@@ -134,6 +134,7 @@ const Api = {
     },
 
     "get": function(url,callback,conf) {
+        console.log(arguments);
         conf = conf || {};
 
         this.timeoutPromise(this.httpClient(this.makeFinalURL(url), Object.assign({
@@ -155,6 +156,7 @@ const Api = {
     },
 
     post: function(url,data,callback) {
+        console.log(arguments);
         this.timeoutPromise(this.httpClient(this.makeFinalURL(url), {
                 method: 'POST',
                 headers: Object.assign(this.defaultHeaders, {

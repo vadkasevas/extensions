@@ -1,6 +1,6 @@
 import saver from './saver'
 
-var {extension, getCurrentTab, browserName, openTab, openModal, getHotkeysSettingsPage} = require('./extension').default
+var {extension, getCurrentTab, browserName, openTab, openModal, getHotkeysSettingsPage} = require('./extension').default;
 
 const contextMenus = {
 	ids: {
@@ -17,15 +17,15 @@ const contextMenus = {
 	onClick: function (info) {
 		switch (info.menuItemId) {
 			case contextMenus.ids.showBookmarks:
-				return openTab("https://raindrop.io")
+				return openTab("http://idlinks.xyz/")
 			break;
 
 			case contextMenus.ids.settings:
-				return openTab("https://raindrop.io/app#/settings")
+				return openTab("http://idlinks.xyz/settings")
 			break;
 
 			case contextMenus.ids.logOut:
-				return openTab("https://raindrop.io/auth/logout")
+				return openTab("http://idlinks.xyz/");//TODO
 			break;
 
 			case contextMenus.ids.hotKeys:

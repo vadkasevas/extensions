@@ -31,7 +31,7 @@ const Saver = {
 				break;
 
 				case "auth":
-					openTab("https://raindrop.io")
+					openTab("http://idlinks.xyz/")
 				break;
 
 				case "error":
@@ -87,12 +87,12 @@ const Saver = {
 				switch (buttonIndex) {
 					case 0:
 						//login
-						openTab("https://raindrop.io/app/#/account/login")
+						openTab("http://idlinks.xyz/")
 					break;
 
 					case 1:
 						//signup
-						openTab("https://raindrop.io/app/#/account/signup")
+						openTab("http://idlinks.xyz/")
 					break;
 				}
 			break;
